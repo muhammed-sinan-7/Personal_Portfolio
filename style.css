@@ -105,77 +105,53 @@ body {
 }
 /* Hero Section */
 .hero-section {
-    min-height: 100vh;
-    padding: 120px 0 80px;
-    /* border: 1px solid red */
-    /* background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); */
-}
+            width: 100%;
+            max-width: 100%;
+            overflow-x: hidden;
+        }
 
+        .left-content {
+            padding: 1rem;
+        }
 
+        .hello {
+            font-size: clamp(1.2rem, 4vw, 2rem);
+            word-wrap: break-word;
+        }
 
-.left-content {
-    padding: 2rem 0;
-    /* margin-left: -200px; */
-    margin-top: 100px !important;
-}
+        .role {
+            font-size: clamp(1.4rem, 5vw, 2.5rem);
+            word-wrap: break-word;
+        }
 
-.hello {
-    font-size: 3.5rem;
-    color: #333;
-    margin-bottom: 1rem;
-}
+        .desc {
+            font-size: clamp(0.9rem, 2.5vw, 1.1rem);
+            line-height: 1.6;
+            word-wrap: break-word;
+        }
 
-.hello span {
-    color: #007bff;
-    font-weight: bold;
-}
+        .social {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
 
-.role {
-    font-size: 3rem;
-    font-weight: bold;
-    color: #2c3e50;
-    margin: 2rem 0 1.5rem 0;
-    line-height: 1.2;
-}
+        .social button {
+            padding: 0.5rem 1rem;
+            font-size: clamp(0.8rem, 2vw, 1rem);
+            white-space: nowrap;
+        }
 
-.desc {
-    line-height: 1.8;
-    color: #6c757d;
-    font-size: 1.3rem;
-    margin: 2rem 0;
-}
+        .image-container {
+            width: 100%;
+            text-align: center;
+        }
 
-.social {
-    margin-top: 1rem;
-
-}
-.social a button {
-    border: 2px solid #0056b3;
-    background-color: #0056b3;
-    border-radius: 8px;
-    font-size: 1.2rem;
-    padding: 12px 25px;
-    color: #ffffff;
-    transition: all 0.3s ease;
-    margin-right: 15px;
-    margin-bottom: 10px;
-    margin-top: -100px;
-  
-}
-
-.social a button:hover {
-    background-color: transparent;
-    color: #0056b3;
-    transform: translateY(-3px);
-}
-
-.profile-image {
-    max-width: 500p;
-    height: auto;
-    border-radius: 15px;
-    /* box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); */
-}
-
+        .profile-image {
+            max-width: 100%;
+            height: auto;
+            width: auto !important;
+        }
 .image-container {
     text-align: center;
     padding: 2rem;
@@ -681,11 +657,8 @@ body {
     }
 
     .hero-section {
-        padding: 100px 0 60px;
-        text-align: center;
-            
-    }
-
+                padding: 1rem 0;
+        }
    
     .hello {
         font-size: 2.5rem;
@@ -710,14 +683,13 @@ body {
     }
 
     .left-content {
-        padding: 1rem 0;
-        margin-top: -850px !important;
-    }
-    .social{
-        margin-left: -7rem;
-        margin-top: -80px;
-
-    }
+                padding: 1.5rem;
+                text-align: center;
+            }
+    .social {
+                justify-content: center;
+                margin-top: 1.5rem;
+            }
     .social a button{
         /* width: 120px; */
         /* height: 40px; */
@@ -751,15 +723,18 @@ body {
         height: 120px;
      
     }
+    .profile-image-small{
+        display: block !important;
+        width: 80%;
+        margin-left: 30px;
+    }
     .projects-section{
         margin-top: -310px;
     }
-     .profile-image{
-        width:510px !important;
-        margin-left: 100px;
-        transform: translateY(-110px);
-       margin-top: 285px;
-     }
+     .profile-image {
+        display: none;
+                max-width: 80%;
+        }
     .stats-card {
         padding: 1.5rem;
         margin-bottom: 1rem;
@@ -817,8 +792,8 @@ body {
 
     .hero-section {
         padding: 80px 0 40px;
-        margin-top: -50px;
-        border: 2px solid red
+        /* margin-top: -50px; */
+        /* border: 2px solid red */
     }
 
     .hello {
