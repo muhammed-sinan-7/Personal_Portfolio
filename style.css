@@ -744,7 +744,7 @@ body {
      
     }
     .profile-image-small{
-        display: block !important;
+        display:contents !important;
         width: 80%;
         position: relative;
         top:100px;
