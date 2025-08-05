@@ -112,10 +112,16 @@ body {
 
         .left-content {
             padding: 1rem;
+            margin-top: 250px;
         }
 
         .hello {
-            font-size: clamp(1.2rem, 4vw, 2rem);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            /* text-align: center; */
+            font-size: 3rem;
+            font-family: 'Inter',sans-serif;
             word-wrap: break-word;
         }
 
@@ -140,17 +146,30 @@ body {
             padding: 0.5rem 1rem;
             font-size: clamp(0.8rem, 2vw, 1rem);
             white-space: nowrap;
+            border-radius: 8px;
+            background-color: #1572b6;
+            border: none;
+            color: white;
+            transition: all 0.5s ease;
         }
-
+        .social button:hover {
+            background-color: transparent;
+            color: #1572b6;
+            border: 1px solid #1572b6;
+        }
         .image-container {
             width: 100%;
             text-align: center;
         }
 
         .profile-image {
-            max-width: 100%;
+            /* max-width: 100%; */
             height: auto;
-            width: auto !important;
+            width: 1000px ;
+            margin-left: -150px;
+        }
+        .profile-image-small{
+            display: none;
         }
 .image-container {
     text-align: center;
@@ -664,14 +683,14 @@ body {
         font-size: 2.5rem;
         /* text-align: left; */
         margin-top: -150px;
-        transform: translateY(-100px);
+        transform: translateY(-150px);
     }
 
     .role {
         font-size: 1.8rem;
               /* text-align: left; */
         font-family: 'Inter',sans-serif;
-        transform: translateY(-100px);
+        transform: translateY(-170px);
     }
 
     .desc {
@@ -679,12 +698,13 @@ body {
         margin: 1.5rem 0;
         font-family: 'Inter',sans-serif;
         color: rgb(76, 77, 85);
-        transform: translateY(-100px);
+        transform: translateY(-190px);
     }
 
     .left-content {
                 padding: 1.5rem;
                 text-align: center;
+                transform: translateY(-100px);
             }
     .social {
                 justify-content: center;
@@ -695,7 +715,7 @@ body {
         /* height: 40px; */
         /* padding: 0px; */
         padding: 10px 20px;
-
+        transform: translateY(-170px);
     }
    
     .about-section{
@@ -726,6 +746,8 @@ body {
     .profile-image-small{
         display: block !important;
         width: 80%;
+        position: relative;
+        top:100px;
         margin-left: 30px;
     }
     .projects-section{
